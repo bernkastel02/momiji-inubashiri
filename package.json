@@ -1,0 +1,43 @@
+{
+    "name": "Momiji",
+    "version": "4.0.0",
+    "description": "A multi-functional discord bot.",
+    "main": "bot.js",
+    "dependencies": {
+        "asyncawait": "^1.0.6",
+        "body-parser": "^1.17.2",
+        "chalk": "^2.0.1",
+        "download-file": "^0.1.5",
+        "eris": "^0.7.0",
+        "eventemitter3": "^2.0.3",
+        "express": "^4.15.3",
+        "file-extension": "^3.1.2",
+        "github": "^9.2.0",
+        "google-images": "^2.1.0",
+        "image-downloader": "^3.2.2",
+        "lame": "^1.2.4",
+        "node-github": "0.0.3",
+        "node-wit": "^4.3.0",
+        "npm-package-info": "0.0.3",
+        "package-info": "^3.0.1",
+        "request": "^2.81.0",
+        "require-directory": "^2.1.1",
+        "rethinkdbdash": "^2.3.29",
+        "speaker": "^0.3.0",
+        "wit-module": "^1.2.0",
+        "youtube-audio-stream": "0.0.50",
+        "youtube-dl": "^1.11.1",
+        "ytdl-core": "^0.15.0"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "test": "momiji ping"
+    },
+    "keywords": [
+        "momiji",
+        "discordbot",
+        "discord"
+    ],
+    "author": "Drew & Flandre",
+    "license": "ISC"
+}
