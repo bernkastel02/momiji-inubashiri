@@ -1,0 +1,12 @@
+{
+    "gelbooru.com/index.php": {
+        "aliases": ["gb_fix"],
+        "endpoint": "?page=dapi&s=post&q=index&json=1&",
+        "random": false
+    },
+    "e621.net": {
+        "aliases": ["e621"],
+        "endpoint": "/post/index.json?",
+        "random": true
+    }
+}

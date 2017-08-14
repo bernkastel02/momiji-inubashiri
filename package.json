@@ -15,6 +15,7 @@
         "github": "^9.2.0",
         "google-images": "^2.1.0",
         "image-downloader": "^3.2.2",
+        "kaori": "^1.0.9",
         "lame": "^1.2.4",
         "node-github": "0.0.3",
         "node-wit": "^4.3.0",

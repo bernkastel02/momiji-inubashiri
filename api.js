@@ -5,13 +5,26 @@ var bodyParser = require('body-parser')
 var version = require("./version.json")
 const Eris = require("eris")
 const bot = new Eris("MzM5Mjg3MTg0MzgzNDEwMTc3.DFhxVQ.yX6QtdtbNVk7weVvZQooGhDEm0M")
-const r = require("rethinkdbdash")({
-    servers: [{
-        host: "178.32.232.165",
-        port: 28016
-    }],
-    silent: true
-})
+var r;
+if (bot.user.username == "Momiji") {
+    r = require("rethinkdbdash")({
+        servers: [{
+            host: "178.32.232.165",
+            port: 28016
+        }],
+        silent: true
+    })
+}
+else if (bot.user.username == "Momiji Beta") {
+    r = require("rethinkdbdash")({
+        servers: [{
+            host: "178.32 .232 .165",
+            port: 28017
+        }],
+        silent: true
+    })
+}
+
 var npmPackage = require('npm-package-info')
 bot.channels = []
 bot.newguilds = []

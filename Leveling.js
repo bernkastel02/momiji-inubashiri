@@ -1,5 +1,9 @@
 "use strict"
 const r = require("rethinkdbdash")({
+    servers: [{
+        host: "178.32.232.165",
+        port: 28017
+    }], // Beta Port, jesus fucking christ
     silent: true
 })
 
@@ -8,14 +12,14 @@ class Person {
 
     get(user_id) {
         return new Promise((resolve, reject) => {
-            var resa = {};
+            let resa = {}
             r.db('momiji').table('users').get(user_id).run().then((res) => {
                 if (!res) {
-                    resa.message = "User not found in database."
+                    resa.message = "User not found in database. (Leveling.js Error)"
                     reject(resa)
                 }
                 else {
-                    resa = res;
+                    resa = res
                     resolve(res)
                 }
 
